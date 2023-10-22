@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro Netflix</title>
+</head>
+<body>
+    <h1>Netflix</h1>
+
+    <table>
+      <form action="processar.php" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required><br>
+          <label for="idade">Idade:</label>
+          <input type="date" id="idade" name="idade" required><br>
+          <label for="sexo">Sexo:</label>
+          <select id="select" name="sexo">
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+          </select><br>
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required><br>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required><br>
+          <p>Qual gênero de filme você gosta?</p>
+          <input type="checkbox" id="acao" name="genero" value="acao">
+          <label for="acao">Ação</label><br>
+          <input type="checkbox" id="aventura" name="genero" value="aventura">
+          <label for="aventura">Aventura</label><br>
+          <input type="checkbox" id="comedia" name="genero" value="comedia">
+          <label for="comedia">Comédia</label><br>
+          <input type="checkbox" id="drama" name="genero" value="drama">
+          <label for="drama">Drama</label><br>
+          <input type="checkbox" id="ficcao" name="genero" value="ficcao">
+          <label for="ficcao">Ficção Científica</label><br>
+          <input type="checkbox" id="terror" name="genero" value="terror">
+          <label for="terror">Terror</label><br>
+          <input type="submit" value="Cadastrar">
+      </form>
+    </table>
+</body>
+</html>
